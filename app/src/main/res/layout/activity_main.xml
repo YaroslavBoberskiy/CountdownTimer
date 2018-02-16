@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yboberskiy.countdowntimer.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="62dp"
+        tools:ignore="MissingConstraints">
+
+        <SeekBar
+            android:id="@+id/timerSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:padding="10dip"
+            android:progressBackgroundTint="@android:color/holo_orange_light" />
+
+        <ImageView
+            android:id="@+id/eggImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/startButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/timerSeekBar"
+            app:srcCompat="@drawable/egg" />
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/eggImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_marginBottom="80dp"
+            android:padding="20dip"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="46sp" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dip"
+            android:background="@android:color/holo_orange_light"
+            android:padding="10dip"
+            android:shadowColor="@android:color/holo_orange_light"
+            android:text="START!"
+            android:textColorLink="@android:color/holo_orange_dark" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
